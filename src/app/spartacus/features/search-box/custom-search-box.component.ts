@@ -8,10 +8,12 @@ import { SearchBoxComponent, CmsComponentData, SearchBoxComponentService } from 
   styleUrls: ['./custom-search-box.component.scss'],
 })
 export class CustomSearchBoxComponent extends SearchBoxComponent {
-  constructor(searchBoxComponentService: SearchBoxComponentService,
+  constructor(
+    searchBoxComponentService: SearchBoxComponentService,
     componentData: CmsComponentData<CmsSearchBoxComponent>,
     winRef: WindowRef,
-    routingService: RoutingService) {
+    routingService: RoutingService
+  ) {
     super(searchBoxComponentService, componentData, winRef, routingService);
   }
 }

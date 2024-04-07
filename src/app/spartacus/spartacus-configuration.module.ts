@@ -3,6 +3,15 @@ import { translationChunksConfig, translations } from "@spartacus/assets";
 import { FeaturesConfig, I18nConfig, OccConfig, provideConfig, SiteContextConfig } from "@spartacus/core";
 import { defaultCmsContentProviders, layoutConfig, mediaConfig } from "@spartacus/storefront";
 
+const customTranslation = {
+  en: {
+    common: {
+      searchBox: {
+        placeholder: "Pesquisar produtos",
+      },
+    },
+  },
+};
 @NgModule({
   declarations: [],
   imports: [
@@ -25,6 +34,8 @@ import { defaultCmsContentProviders, layoutConfig, mediaConfig } from "@spartacu
       chunks: translationChunksConfig,
       fallbackLang: 'en'
     },
+  }), provideConfig({
+    i18n: { resources: customTranslation },
   }), provideConfig(<FeaturesConfig>{
     features: {
       level: '4.3'
