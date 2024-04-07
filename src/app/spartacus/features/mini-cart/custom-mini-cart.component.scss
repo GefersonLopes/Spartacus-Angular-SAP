@@ -1,0 +1,48 @@
+/* custom-mini-cart.component.scss */
+
+a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+  position: relative;
+
+  &:hover {
+    background-color: #151924;
+  }
+
+  .count {
+    background-color: rgba(255, 255, 255, 0.638);
+    color: #151924;
+    width: 15px;
+    height: 15px;
+    display: flex;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    font-size: 11px;
+  }
+
+  .total {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fe5757;
+  }
+
+  cx-icon {
+    margin-right: 10px;
+    font-size: 20px;
+    color: #fe5757;
+  }
+}
